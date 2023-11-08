@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
               width: 10,
             ),
             Text(
-              "Untitled UI",
+              "My Portfolio",
               style: TextStyle(color: Colors.black),
             )
           ],
@@ -389,22 +389,45 @@ class HomeScreen extends StatelessWidget {
                       ),
               ),
             ),
-            Center(
-              child: SizedBox(
-                  width: context.screenConstraint().width * 0.8,
-                  child: GridView.builder(
-                      shrinkWrap: true,
-                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 2,
-                          childAspectRatio:
-                              context.screenConstraint().width > 1000 ? 3 : 2),
-                      itemCount: projectList.length,
-                      itemBuilder: (BuildContext context, int index) {
-                        return ProjectWidget(
-                          projectData: projectList[index],
-                        );
-                      })),
-            ),
+            context.screenConstraint().width > 1200
+                ? Center(
+                    child: SizedBox(
+                        width: context.screenConstraint().width * 0.8,
+                        child: GridView.builder(
+                            shrinkWrap: true,
+                            gridDelegate:
+                                SliverGridDelegateWithFixedCrossAxisCount(
+                                    crossAxisCount: 2,
+                                    childAspectRatio:
+                                        context.screenConstraint().width > 1000
+                                            ? 3
+                                            : 2),
+                            itemCount: projectList.length,
+                            itemBuilder: (BuildContext context, int index) {
+                              return ProjectWidget(
+                                projectData: projectList[index],
+                              );
+                            })),
+                  )
+                : Center(
+                    child: SizedBox(
+                        width: context.screenConstraint().width * 0.8,
+                        child: GridView.builder(
+                            shrinkWrap: true,
+                            gridDelegate:
+                                SliverGridDelegateWithFixedCrossAxisCount(
+                                    crossAxisCount: 1,
+                                    childAspectRatio:
+                                        context.screenConstraint().width > 1000
+                                            ? 3
+                                            : 2),
+                            itemCount: projectList.length,
+                            itemBuilder: (BuildContext context, int index) {
+                              return ProjectWidget(
+                                projectData: projectList[index],
+                              );
+                            })),
+                  ),
           ],
         ),
       ),

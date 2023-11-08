@@ -8,20 +8,20 @@ Color kGradient2 = Colors.pinkAccent;
 String imagePath = "images/aditya.jpeg";
 
 //String data to modify
-String name = "Your Name";
-String username = "flutterroles";
+String name = "Olorunsola Oyintomiwa";
+String username = "flutterdev";
 
 //Link to resume on Google Drive
 String resumeLink =
-    "https://drive.google.com/file/d/1uZPqMWva6pZxzQxsR_ILLZ_FxJr24QeY/view?usp=sharing";
+    "https://dochub.com/oyintomiwao/dbnaAMqK9meaqrWKGNXJm0/oyins-tech-cv-pdf?gdiExists=12fF-TUtwZ0i4-fd1LBFMf7unkbtECMDH";
 
 //Contact Email
-String contactEmail = "mail@adityathakur.in";
+String contactEmail = "oyintomiwao@gmail.com";
 
 String aboutWorkExperience = '''
-Hello I am a freelancer
+Hello I am a flutter developer
 
-He has previously been a speaker at the Flutter Global Summit'21, Flutter Vikings and events across colleges, universities (like VIT Chennai, Vellore, MIT-ADT), and clubs (IEEE APSIT, SFIT, GirlScript, GeeksforGeeks Student Chapter, Google CrowdSource, and more) here in India. 
+I have had the privilege of working as a Flutter developer for the past 18 months. During this time, I have gained valuable experience and expertise in mobile app development using the Flutter framework. My journey as a Flutter developer has been both challenging and rewarding, allowing me to contribute to a variety of projects and build a solid foundation in mobile app development. 
 ''';
 
 String aboutMeSummary = '''
@@ -30,27 +30,27 @@ Aditya is a content creator and has over 5K subscribers on YouTube and a 700+ me
 🚀 Discord Community: discord.adityathakur.in
 ''';
 
-String location = "Dharamshala, India";
-String website = "adityathakur.in";
-String portfolio = "adityathakurxd";
-String email = "mail@adityathakur.in";
+String location = "Ondo State, Nigeria";
+String website = "Oyintomiwa.in";
+String portfolio = "Oyintomiwa";
+String email = "Oyintomiwao@gmail.com";
 
 List<Project> projectList = [
   Project(
-      name: "Shades",
+      name: "Widows Challenge",
       description:
-          "Winner IEEE Mandi 'Go Online' Challenge at Electrothon, NIT Hamirpur.",
-      link: "https://github.com/adityathakurxd/shades"),
+          "this is an app that collects the data of widows in ondo-state",
+      link: "https://github.com/Tommyval/widows_challenge.git"),
   Project(
-      name: "Fiasco",
+      name: "Grocery_app",
       description:
-          "Fiasco is one stop solution to help you manage Family expenses in one place!",
-      link: "https://github.com/adityathakurxd/fiasco"),
+          "the is an ecommerce app where users order items, with a firebase backend",
+      link: "https://github.com/Tommyval/grocery_app.git"),
   Project(
-      name: "Fiasco",
+      name: "Grocery web admin parnel",
       description:
-          "Fiasco is one stop solution to help you manage Family expenses in one place!",
-      link: "https://github.com/adityathakurxd/fiasco"),
+          "This is the backend that stores the informations displayed in the frontend built with firebase",
+      link: "https://github.com/Tommyval/grocery_web_admin.git"),
   Project(
       name: "Flutter Portfolio",
       description: "A template for Portfolio",
